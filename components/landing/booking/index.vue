@@ -9,14 +9,13 @@
           <booking-card v-for="(booking, index) in bookings"
                         :key="index"
                         :booking="booking"
+                        @switch="switchBooking"
 
           />
         </div>
-        <v-card v-if="page == 1" flat class="booking-page-2">
-          <v-card-text>
-            goodbye
-          </v-card-text>
-        </v-card>
+        <div v-if="page == 1" flat class="booking-page-2">
+
+        </div>
       </v-tab-item>
     </v-tabs-items>
   </div>
@@ -24,6 +23,7 @@
 
 <script>
   import bookingCard from './booking-card'
+  import bookingApp from './booking-app'
 
   export default {
     name: "index",
@@ -34,7 +34,7 @@
       }
     },
     components: {
-      bookingCard
+      bookingCard, bookingApp
     },
     data () {
       return {
@@ -55,6 +55,7 @@
   .booking-component {
     max-width: 650px;
     margin: 0 auto;
+    padding-bottom: 5rem;
   }
 
   .booking-page-1, .booking-page-2 {

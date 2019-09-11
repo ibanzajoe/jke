@@ -126,6 +126,8 @@ export default {
   .main-grid {
     max-width: 1440px;
     margin: 0 auto;
+    display: grid;
+    grid-template-rows: auto;
   }
 
   .grid-services-title, .grid-booking-title {

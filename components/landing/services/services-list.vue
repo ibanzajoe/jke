@@ -125,6 +125,10 @@
     width: 100%;
   }
 
+  .services-list:last-child .service-end-border {
+    display: none;
+  }
+
   @media screen and (max-width: 1024px) {
     .service-item {
       padding: 0 20px;
@@ -139,8 +143,8 @@
     .service-item {
       max-width: 100%;
       flex-basis: 100%;
-      padding-left: 50px;
-      padding-right: 50px;
+      padding-left: 15px;
+      padding-right: 15px;
     }
   }
 </style>

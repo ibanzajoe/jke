@@ -16,7 +16,7 @@
         <h3 class="content-label-description">
           {{booking.time}} | {{booking.price}}
         </h3>
-        <v-btn outlined class="book-button" large >BOOK</v-btn>
+        <v-btn @click="$emit('switch')" outlined class="book-button" large >BOOK</v-btn>
       </div>
     </div>
   </div>
@@ -81,5 +81,18 @@
     border-color: rgb(95, 11, 53);
     color: rgb(95, 11, 53);
     border-radius: 0;
+  }
+
+  @media screen and (max-width: 600px) {
+    .booking-card {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+    .booking-card-content-container {
+      display: block;
+    }
+    .content-action {
+      text-align: left;
+    }
   }
 </style>
