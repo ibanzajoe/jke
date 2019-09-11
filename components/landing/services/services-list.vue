@@ -11,7 +11,8 @@
     <v-layout class="service-listing" wrap>
 
       <v-flex  class="service-item"
-               v-for="item in service.items"
+               v-for="(item, index) in service.items"
+               :key="index"
       >
         <div class="service-item-box">
           <div class="item-image-box">

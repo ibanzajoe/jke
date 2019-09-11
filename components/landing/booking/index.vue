@@ -6,7 +6,8 @@
         :key="p"
       >
         <div v-if="page == 0" flat class="booking-page-1">
-          <booking-card v-for="booking in bookings"
+          <booking-card v-for="(booking, index) in bookings"
+                        :key="index"
                         :booking="booking"
 
           />
