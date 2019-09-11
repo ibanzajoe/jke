@@ -1,6 +1,7 @@
 <template>
   <div class="services-component" >
-    <services-list v-for="service in services"
+    <services-list v-for="(service, index) in services"
+                   :key="index"
                    :service="service" />
   </div>
 </template>
