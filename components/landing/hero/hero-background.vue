@@ -75,8 +75,8 @@
   }
 
   .hero-image-box {
-    width: 625px;
-    height: 625px;
+    width: 600px;
+    height: 600px;
     padding: 1.5rem;
     background-color: #fff;
     box-shadow: 0 2px 6px 4px rgba(0,0,0,0.1);
@@ -90,7 +90,7 @@
     background-size: 135%;
   }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 700px) {
     .hero-background-color {
       height: 280px;
     }

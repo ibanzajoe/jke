@@ -1,5 +1,5 @@
 <template>
-  <v-app light>
+  <v-app>
     <div v-if="false">
       <v-navigation-drawer
         v-model="drawer"
@@ -59,11 +59,11 @@
         </v-btn>
       </v-app-bar>
     </div>
-    <v-content>
-      <v-container>
-        <nuxt />
-      </v-container>
-    </v-content>
+    <div class="page-content">
+      <nuxt />
+    </div>
+
+
     <div v-if="false">
       <v-navigation-drawer
         v-model="rightDrawer"
@@ -120,3 +120,8 @@ export default {
   }
 }
 </script>
+<style scoped>
+  .page-content {
+    width: 100%;
+  }
+</style>
