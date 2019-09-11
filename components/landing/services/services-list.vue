@@ -94,7 +94,7 @@
 
   .item-label-box {
     display: flex;
-    align-items: start;
+    align-items: flex-start;
     margin-top: 30px;
   }
 
