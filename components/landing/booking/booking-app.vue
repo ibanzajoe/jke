@@ -1,6 +1,6 @@
 <template>
-  <div class="booking-app">
-
+  <div @click="$emit('switch')" class="booking-app">
+    <img src="./screenshot.png" />
   </div>
 </template>
 
@@ -12,4 +12,8 @@
 
 <style scoped>
 
+  .booking-app img {
+    height: 100%;
+    width: 100%;
+  }
 </style>

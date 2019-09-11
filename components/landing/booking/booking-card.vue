@@ -40,6 +40,9 @@
     border-bottom: 1px solid rgb(226, 226, 226);
     padding-top: 40px;
   }
+  .booking-card:last-child {
+    border-bottom: 0;
+  }
   .booking-card-content-container {
     display: flex;
     align-items: center;

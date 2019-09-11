@@ -14,7 +14,7 @@
           />
         </div>
         <div v-if="page == 1" flat class="booking-page-2">
-
+          <booking-app @switch="switchBooking" />
         </div>
       </v-tab-item>
     </v-tabs-items>
@@ -59,7 +59,7 @@
   }
 
   .booking-page-1, .booking-page-2 {
-    height: 200px;
+    height: 725px;;
     width: 100%;
     padding: 0 1rem;
   }

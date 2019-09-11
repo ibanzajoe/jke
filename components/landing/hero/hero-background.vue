@@ -85,7 +85,7 @@
   .hero-image {
     width: 100%;
     height: 100%;
-    background-image: url('https://img1.wsimg.com/isteam/ip/bcc5efe4-5bfe-45c7-8f45-5dc2ca01c600/1a6eb00f-1e98-46f4-989b-2bfcc8f93422.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:1050,cg:true');
+    background-image: url('./hero-image.webp');
     background-position: center;
     background-size: 135%;
   }
