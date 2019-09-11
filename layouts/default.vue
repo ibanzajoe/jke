@@ -1,5 +1,5 @@
 <template>
-  <v-app dark>
+  <v-app light>
     <div v-if="false">
       <v-navigation-drawer
         v-model="drawer"

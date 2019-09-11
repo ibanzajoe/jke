@@ -1,9 +1,12 @@
 <template>
   <div class="main-grid">
     <div class="grid-hero">
-
+      <hero />
     </div>
     <div class="grid-services">
+      <divider />
+
+      <services />
 
     </div>
     <div class="grid-booking">
@@ -22,13 +25,20 @@
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
-import VuetifyLogo from '~/components/VuetifyLogo.vue'
+import hero from '~/components/landing/hero'
+import divider from '~/components/divider'
+import services from '~/components/landing/services'
 
 export default {
   components: {
-    Logo,
-    VuetifyLogo
+    hero,divider, services
   }
 }
 </script>
+
+<style scoped>
+  .main-grid {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+</style>
