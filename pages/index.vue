@@ -32,6 +32,7 @@
       <div class="carousel-container">
         <v-carousel hide-delimiters>
           <v-carousel-item
+            class="carousel-item-holder"
             v-for="(item,i) in jkeData.styleImages"
             :key="i"
             :src="item"
@@ -46,7 +47,9 @@
     </div>
 
     <div class="grid-contact">
-
+      <divider />
+      <contact :contact="jkeData.contact" />
+      <!--<pre>{{jkeData.contact}}</pre>-->
     </div>
 
     <div class="grid-footer">
@@ -60,10 +63,11 @@ import hero from '~/components/landing/hero'
 import divider from '~/components/divider'
 import services from '~/components/landing/services'
 import booking from '~/components/landing/booking'
+import contact from '~/components/landing/contact'
 
 export default {
   components: {
-    hero,divider, services, booking
+    hero,divider, services, booking, contact
   },
   data () {
     return {
@@ -146,7 +150,38 @@ export default {
           './images/image4.webp',
           './images/image5.webp',
           './images/image6.webp'
-        ]
+        ],
+        contact: {
+          headers: {
+            heading: 'Stay on the cutting-edge',
+            subheading: 'Sing up to hear from us about specials, sales, events, and fashion tips.'
+          },
+          map: {
+
+          },
+          content: [
+            {
+              heading: 'Cancellation Policy',
+              content: 'Cancellations accepted up to 24 hours before the scheduled service. Within 24 hours of the service, cancellations will be charged 50% of the scheduled cost.'
+            },
+            {
+              heading: 'Hair By JKE',
+              content: '9666 Brighton Way, Beverly Hills, California 90210',
+              phone: '(213) 200 2940'
+            },
+            {
+              heading: 'Hours',
+              content: 'time',
+              time: [
+                'Tuesday 10 am to 5 pm',
+                'Wednesday 10 am to 5pm',
+                'Thursday 10 am to 5 pm',
+                'Friday 10 am to 5 pm',
+                'Saturday 8 am to 4 pm'
+              ]
+            }
+          ]
+        }
 
       }
     }
@@ -154,7 +189,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" rel="stylesheet/scss" scoped>
   .main-grid {
     max-width: 1440px;
     margin: 0 auto;
@@ -188,5 +223,12 @@ export default {
 
   .banner-block svg {
     color: rgb(95, 11, 53);
+  }
+
+  .carousel-container {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    padding-bottom: 70px;
   }
 </style>

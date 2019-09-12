@@ -53,7 +53,7 @@
 <style scoped>
 
   .booking-component {
-    max-width: 650px;
+    max-width: 975px;
     margin: 0 auto;
     padding-bottom: 5rem;
   }
@@ -62,6 +62,11 @@
     height: 725px;;
     width: 100%;
     padding: 0 1rem;
+  }
+
+  .booking-page-1 {
+    max-width: 800px;
+    margin: 0 auto;
   }
 
   .booking-container {
