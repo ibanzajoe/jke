@@ -33,6 +33,9 @@
 
 <style scoped>
 
+  .contact-header {
+    padding-bottom: 70px;
+  }
   .contact-title {
     font-size: 36px;
     margin-bottom: 15px;

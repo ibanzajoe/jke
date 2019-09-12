@@ -27,7 +27,9 @@
 <style scoped>
 
   .contact-index {
-    height: 200px;
     width: 100%;
+    padding-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 </style>
