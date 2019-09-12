@@ -2,7 +2,7 @@
   <div class="contact-index">
     <contact-header :text="contact.headers" />
 
-    <contact-content :content="content.content" :map="content.map" />
+    <contact-content :content="contact.content" :map="contact.map" />
 
   </div>
 </template>
